@@ -6,6 +6,7 @@ public class Paws : MonoBehaviour
 {
     public static bool GameIsPaws = false;
     public GameObject PawsMenuUI;
+    public GameObject FPC;
     // Update is called once per frame
     private void Start()
     {
@@ -13,7 +14,7 @@ public class Paws : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             if (GameIsPaws)
             {
@@ -30,12 +31,14 @@ public class Paws : MonoBehaviour
         PawsMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaws = false;
+        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
     }
     void Pawz()
     {
         PawsMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaws = true;
+        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = false;
     }
     public void Qwit()
     {
@@ -48,5 +51,10 @@ public class Paws : MonoBehaviour
         {
             Application.Quit();
         }
+    }
+    public void Mawdels()
+    {
+        PawsMenuUI.SetActive(false);
+        Mooodel.GameIsModel = true;
     }
 }
