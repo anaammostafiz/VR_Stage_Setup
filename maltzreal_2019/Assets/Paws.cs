@@ -57,4 +57,9 @@ public class Paws : MonoBehaviour
         PawsMenuUI.SetActive(false);
         Mooodel.GameIsModel = true;
     }
+    public void GoodEyeMate()
+    {
+        PawsMenuUI.SetActive(false);
+        GodEye.GameIsLook = true;
+    }
 }
