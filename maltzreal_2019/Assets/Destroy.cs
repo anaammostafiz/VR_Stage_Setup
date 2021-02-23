@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
-    void OnCollisionEnter(Collision collision)
+    void OnMouseOver()
     {
-        if (collision.gameObject.tag == "trash")
+        if (Input.GetKey(KeyCode.X))
         {
             Destroy(gameObject);
         }
-
     }
 }

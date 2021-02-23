@@ -23,7 +23,6 @@ public class GodEye : MonoBehaviour
             FPC.SetActive(true);
             ThirdCam.SetActive(false);
             GameIsLook = false;
-            Paws.GameIsPaws = false;
         }
         if (GameIsLook == true)
         {
