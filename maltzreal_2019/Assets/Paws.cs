@@ -14,7 +14,7 @@ public class Paws : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.P) && BootUp.isGameStart)
         {
             if (GameIsPaws)
             {
