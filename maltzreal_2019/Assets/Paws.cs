@@ -7,7 +7,6 @@ public class Paws : MonoBehaviour
     public static bool GameIsPaws = false;
     public GameObject PawsMenuUI;
     public GameObject FPC;
-    // Update is called once per frame
     private void Start()
     {
         PawsMenuUI.SetActive(false);
