@@ -28,6 +28,7 @@ public class GodMode : MonoBehaviour
     public GameObject model_27B;
     public GameObject model_69B;
     public GameObject model_72B;
+    public GameObject model_8B;
 
     public void Spawn1B()
     {
@@ -252,6 +253,16 @@ public class GodMode : MonoBehaviour
     public void Spawn72B()
     {
         GameObject Clone = Instantiate(model_72B);
+        Clone.transform.position = new Vector3(0, 0, 0);
+        Mooodel.GameIsModel = false;
+        Time.timeScale = 1f;
+        Paws.GameIsPaws = false;
+        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+    }
+
+    public void Spawn8B()
+    {
+        GameObject Clone = Instantiate(model_8B);
         Clone.transform.position = new Vector3(0, 0, 0);
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
