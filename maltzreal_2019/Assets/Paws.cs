@@ -1,19 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
 
 public class Paws : MonoBehaviour
 {
     public static bool GameIsPaws = false;
     public GameObject PawsMenuUI;
     public GameObject FPC;
+    public SteamVR_ActionSet m_ActionSet;
+    public SteamVR_Action_Boolean m_BooleanAction;
+
+    private void Awake()
+    {
+        m_BooleanAction = SteamVR_Actions._default.GrabGrip;
+    }
     private void Start()
     {
         PawsMenuUI.SetActive(false);
+        m_ActionSet.Activate(SteamVR_Input_Sources.Any, 0, true);
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P) && BootUp.isGameStart)
+        if (m_BooleanAction[SteamVR_Input_Sources.Any].stateDown == true && BootUp.isGameStart)
         {
             if (GameIsPaws)
             {
