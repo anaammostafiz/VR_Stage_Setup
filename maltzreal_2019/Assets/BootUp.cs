@@ -27,7 +27,7 @@ public class BootUp : MonoBehaviour
 
     void Update()
     {
-        if (m_BooleanAction[SteamVR_Input_Sources.LeftHand].stateDown == true)
+        if (m_BooleanAction[SteamVR_Input_Sources.LeftHand].stateDown == true && isGameStart == false)
         {
             BootMenuUI.SetActive(false);
             Time.timeScale = 1f;

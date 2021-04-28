@@ -29,6 +29,16 @@ public class GodMode : MonoBehaviour
     public GameObject model_69B;
     public GameObject model_72B;
     public GameObject model_8B;
+    public GameObject objectTest;
+
+    public void SpawnTest()
+    {
+        GameObject Clone = Instantiate(objectTest);
+        Clone.transform.position = new Vector3(400, 0, 0);
+        Mooodel.GameIsModel = false;
+        Time.timeScale = 1f;
+        Paws.GameIsPaws = false;
+    }
 
     public void Spawn1B()
     {
@@ -37,7 +47,6 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
     }
 
     public void Spawn2B()
@@ -47,7 +56,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+
     }
 
     public void Spawn3B()
@@ -57,7 +66,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+
     }
 
     public void Spawn4B()
@@ -67,7 +76,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+
     }
 
     public void Spawn5B()
@@ -77,7 +86,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+
     }
 
     public void Spawn6B()
@@ -87,7 +96,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+  
     }
 
     public void Spawn12B()
@@ -97,7 +106,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+ 
     }
 
     public void Spawn17B()
@@ -107,7 +116,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+ 
     }
 
     public void Spawn18B()
@@ -117,7 +126,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+
     }
 
     public void Spawn19B()
@@ -127,7 +136,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+
     }
 
     public void Spawn20B()
@@ -137,7 +146,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+  
     }
 
     public void Spawn21B()
@@ -147,7 +156,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+
     }
 
     public void Spawn22B()
@@ -157,7 +166,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+
     }
 
     public void Spawn23B()
@@ -167,7 +176,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+
     }
 
     public void Spawn24B()
@@ -177,7 +186,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+
     }
 
     public void Spawn51B()
@@ -187,7 +196,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+
     }
 
     public void Spawn55B()
@@ -197,7 +206,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+
     }
 
     public void Spawn61B()
@@ -207,7 +216,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+
     }
 
     public void Spawn67B()
@@ -217,7 +226,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+
     }
 
     public void Spawn68B()
@@ -227,7 +236,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+
     }
 
     public void Spawn27B()
@@ -237,7 +246,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+
     }
 
     public void Spawn69B()
@@ -247,7 +256,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+
     }
 
     public void Spawn72B()
@@ -257,7 +266,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+
     }
 
     public void Spawn8B()
@@ -267,7 +276,7 @@ public class GodMode : MonoBehaviour
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
+ 
     }
 }
 

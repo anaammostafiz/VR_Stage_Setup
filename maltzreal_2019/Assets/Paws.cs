@@ -7,7 +7,6 @@ public class Paws : MonoBehaviour
 {
     public static bool GameIsPaws = false;
     public GameObject PawsMenuUI;
-    public GameObject FPC;
     public SteamVR_ActionSet m_ActionSet;
     public SteamVR_Action_Boolean m_BooleanAction;
 
@@ -39,14 +38,12 @@ public class Paws : MonoBehaviour
         PawsMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaws = false;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = true;
     }
     void Pawz()
     {
         PawsMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaws = true;
-        FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = false;
     }
     public void Qwit()
     {

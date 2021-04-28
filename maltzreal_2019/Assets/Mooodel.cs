@@ -6,7 +6,6 @@ public class Mooodel : MonoBehaviour
 {
     public GameObject ModelMenuUI;
     public static bool GameIsModel = false;
-    public GameObject FPC;
     // Start is called before the first frame update
     private void Start()
     {
@@ -25,7 +24,6 @@ public class Mooodel : MonoBehaviour
         if (GameIsModel == true)
         {
             ModelMenuUI.SetActive(true);
-            FPC.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.m_cursorIsLocked = false;
         }
         else
         {
