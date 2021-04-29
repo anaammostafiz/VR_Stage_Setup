@@ -30,10 +30,15 @@ public class SceneHandler : MonoBehaviour
             Debug.Log("ModelsButton was clicked");
             canvas.GetComponent<Paws>().Mawdels();
         }
-        if (e.target.name == "ObjectButton")
+        if (e.target.name == "1B_Button")
         {
-            Debug.Log("ObjectButton was clicked");
-            canvas.GetComponent<GodMode>().SpawnTest();
+            Debug.Log("1B_Button was clicked");
+            canvas.GetComponent<GodMode>().Spawn1B();
+        }
+        if (e.target.name == "2B_Button")
+        {
+            Debug.Log("2B_Button was clicked");
+            canvas.GetComponent<GodMode>().Spawn2B();
         }
     }
 
@@ -47,9 +52,13 @@ public class SceneHandler : MonoBehaviour
         {
             Debug.Log("ModelsButton was entered");
         }
-        if (e.target.name == "ObjectButton")
+        if (e.target.name == "1B_Button")
         {
-            Debug.Log("ObjectButton was entered");
+            Debug.Log("1B_Button was entered");
+        }
+        if (e.target.name == "2B_Button")
+        {
+            Debug.Log("2B_Button was entered");
         }
     }
 
@@ -63,9 +72,13 @@ public class SceneHandler : MonoBehaviour
         {
             Debug.Log("ModelsButton was exited");
         }
-        if (e.target.name == "ObjectButton")
+        if (e.target.name == "1B_Button")
         {
-            Debug.Log("ObjectButton was entered");
+            Debug.Log("1B_Button was exited");
+        }
+        if (e.target.name == "2B_Button")
+        {
+            Debug.Log("2B_Button was exited");
         }
     }
     // Start is called before the first frame update

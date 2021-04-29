@@ -43,7 +43,7 @@ public class GodMode : MonoBehaviour
     public void Spawn1B()
     {
         GameObject Clone = Instantiate(model_1B);
-        Clone.transform.position = new Vector3(0, 0, 0);
+        Clone.transform.position = new Vector3(0, -380, -155);
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
@@ -52,7 +52,7 @@ public class GodMode : MonoBehaviour
     public void Spawn2B()
     {
         GameObject Clone = Instantiate(model_2B);
-        Clone.transform.position = new Vector3(0, 0, 0);
+        Clone.transform.position = new Vector3(10, -20, -165);
         Mooodel.GameIsModel = false;
         Time.timeScale = 1f;
         Paws.GameIsPaws = false;
